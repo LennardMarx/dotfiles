@@ -1,7 +1,17 @@
 # Ignore everything
-*
+# *
+/*
+# /*/
+
+!i3
+# !tmux
+# !/tmux/.tmux-themepack/*
+# !i3/*
 
 # But not these files...
 !.gitignore
 !README.md
-!i3/
+
+# !*/
+
+# !i3/
