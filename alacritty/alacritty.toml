@@ -1,5 +1,5 @@
 # history = 10000
-# import = ["/home/lennard/.config/alacritty/themes/themes/gruvbox_material_medium_dark_edited.toml"]
+import = ["~/.config/alacritty/themes/gruvbox_material_medium_dark.toml"]
 # multiplier = 3
 
 [colors]
