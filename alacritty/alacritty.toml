@@ -1,0 +1,31 @@
+# history = 10000
+# import = ["/home/lennard/.config/alacritty/themes/themes/gruvbox_material_medium_dark_edited.toml"]
+# multiplier = 3
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[font]
+size = 12
+
+[font.bold]
+family = "JetBrains Mono NF"
+style = "Bold"
+
+[font.bold_italic]
+family = "JetBrains Mono NF"
+style = "Bold Italic"
+
+[font.italic]
+family = "JetBrains Mono NF"
+style = "Italic"
+
+[font.normal]
+family = "JetBrains Mono NF"
+style = "Regular"
+
+[window]
+decorations = "none"
+dynamic_padding = false
+dynamic_title = true
+title = "Alacritty"
