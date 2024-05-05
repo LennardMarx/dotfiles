@@ -4,8 +4,6 @@ configuration {
 	font: "JetBrains Mono NF 12";
 }
 
-@theme "gruvbox-dark-soft.rasi"
-
 window {
   width:						500px;
   height:						300px;
