@@ -13,6 +13,13 @@ apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-
 cargo install alacritty
 ```
 
+## Pull into ~./config folder
+```
+git init .
+git remote add origin https://github.com/LennardMarx/dotfiles.git
+git pull origin master
+```
+
 #### i3
 Window manager\
 https://i3wm.org/
