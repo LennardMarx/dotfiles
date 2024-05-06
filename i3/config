@@ -250,6 +250,11 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 # Lock screen
 # bindsym $mod+m exec i3lock
 # bindsym $mod+m exec ~/.config/i3/lock_screen.sh
+
+# toggle bar
+bindsym $mod+n bar hidden_state toggle
+# bindsym $mod+n bar mode toggle
+
 # File Manager
 bindsym $mod+z exec thunar
 # Browser
@@ -269,6 +274,9 @@ exec_always --no-startup-id i3-autolayout autolayout &
 # assign [class="firefox"] $ws9
 
 bar {
+        # binding_mode_indicator no 
+        mode hide
+        modifier none
         status_command i3status
         # Set position of bar
         position top

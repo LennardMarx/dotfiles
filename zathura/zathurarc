@@ -6,3 +6,6 @@ set recolor-lightcolor \#f9f5d7
 set recolor-keephue
 set recolor-darkcolor \#3c3836
 set default-bg \#3c3836
+set highlight-color \#458588
+set highlight-active-color \#458588
+set highlight-transparency \0.2
