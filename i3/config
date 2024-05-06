@@ -233,7 +233,7 @@ hide_edge_borders both
 # == General Settings ==
 
 # Gaps between windows
-# gaps inner 0
+# gaps inner 1
 # Focus follows mouse
 focus_follows_mouse no
 
@@ -272,4 +272,7 @@ bar {
         status_command i3status
         # Set position of bar
         position top
+        colors{
+                background #282828
+        }
 }

@@ -1,0 +1,8 @@
+set synctex true
+set synctex-editor-command "nvr --remote-silent +%{line} %{input}"
+
+set recolor   
+set recolor-lightcolor \#f9f5d7
+set recolor-keephue
+set recolor-darkcolor \#3c3836
+set default-bg \#3c3836
