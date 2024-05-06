@@ -44,5 +44,5 @@ Splits i3 windows alternating between vertical and horizontal.\
 https://github.com/BiagioFesta/i3-autolayout
 
 #### Neovim config
-https://github.com/LennardMarx/neovim\_config
+https://github.com/LennardMarx/neovim_config
 
