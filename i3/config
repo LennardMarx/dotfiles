@@ -204,13 +204,16 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 set $gruv-black   #3c3836
+# set $gruv-black   #282828
+set $gruv-white   #f9f5d7
 set $gruv-red     #ea6962
 set $gruv-green   #a9b665
 set $gruv-yellow  #d8a657
 set $gruv-blue    #7daea3
 set $gruv-magenta #d3869b
 set $gruv-cyan    #89b482
-set $gruv-white   #d4be98
+set $gruv-beige   #d4be98
+set $gruv-grey    #666666
 
 # set $bg-color            #3c3836
 set $bg-color            #282828
@@ -236,7 +239,7 @@ hide_edge_borders both
 # == General Settings ==
 
 # Gaps between windows
-gaps inner 10
+gaps inner 7
 # gaps outer 1
 # Focus follows mouse
 focus_follows_mouse no
@@ -287,18 +290,32 @@ exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf
 # assign [class="firefox"] $ws9
 
 bar {
+        i3bar_command i3bar --transparency
+        
         # hidden bar, modifier to show
         mode hide
         hidden_state hide
         modifier $mod
-        
-        status_command i3status
+
+        # status bar information
+        # status_command i3status
         
         # Set position of bar
         position top
 
+        # top padding, right padding, bottom padding, 1px left padding
+        padding 0px 0px 0px 1px
+
         # bar style
         colors{
                 background #282828
+                background #00000000
+
+                # <colorclass> <border> <background> <text>
+                focused_workspace  $gruv-blue $gruv-blue $gruv-black
+                active_workspace   $gruv-grey $gruv-grey $gruv-white
+                inactive_workspace $gruv-black $gruv-black $gruv-grey
+                urgent_workspace   $gruv-red $gruv-red $gruv-white
+                binding_mode       $gruv-red $gruv-red $gruv-white
         }
 }
