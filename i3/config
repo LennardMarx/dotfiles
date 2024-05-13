@@ -112,8 +112,8 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
+# bindsym $mod+s layout stacking
+# bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
@@ -254,17 +254,22 @@ bindsym Print exec flameshot gui
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10
 # Lock screen
-# bindsym $mod+m exec i3lock
+bindsym $mod+m exec i3lock
+# Fancy lock screen (takes too long)
 # bindsym $mod+m exec ~/.config/i3/lock_screen.sh
 
 # toggle bar
 bindsym $mod+n bar hidden_state toggle
 # bindsym $mod+n bar mode toggle
 
+# == Applications ==
+
 # File Manager
 bindsym $mod+z exec thunar
 # Browser
 bindsym $mod+b exec firefox
+# dmenu filebrowser
+bindsym $mod+s exec rofi -show filebrowser
 
 # == Start up ==
 
@@ -282,12 +287,17 @@ exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf
 # assign [class="firefox"] $ws9
 
 bar {
-        # binding_mode_indicator no 
-        # mode hide
-        # modifier none
+        # hidden bar, modifier to show
+        mode hide
+        hidden_state hide
+        modifier $mod
+        
         status_command i3status
+        
         # Set position of bar
         position top
+
+        # bar style
         colors{
                 background #282828
         }
