@@ -212,9 +212,12 @@ set $gruv-magenta #d3869b
 set $gruv-cyan    #89b482
 set $gruv-white   #d4be98
 
-set $bg-color            #3c3836
-set $inactive-bg-color   #3c3836
-set $text-color          #d4be98
+# set $bg-color            #3c3836
+set $bg-color            #282828
+# set $inactive-bg-color   #3c3836
+set $inactive-bg-color   #282828
+# set $text-color          #d4be98
+set $text-color          #f9f5d7
 set $inactive-text-color #666666
 set $urgent-bg-color     #ea6962
 set $indicator-color     #3c3836
@@ -233,9 +236,12 @@ hide_edge_borders both
 # == General Settings ==
 
 # Gaps between windows
-# gaps inner 1
+gaps inner 10
+# gaps outer 1
 # Focus follows mouse
 focus_follows_mouse no
+
+hide_edge_borders both
 
 # == Keybinds ==
 
@@ -265,9 +271,11 @@ bindsym $mod+b exec firefox
 # US keyboard layout
 exec_always --no-startup-id setxkbmap us,de
 # Wallpaper
-# exec_always feh --bg-fill ~/Pictures/wallpaper/harbor.jpg
+exec_always feh --bg-fill ~/Pictures/wallpaper/blue_mountains_2.jpg
 # Automatic tiling layout (AUR package with the same name)
 exec_always --no-startup-id i3-autolayout autolayout &
+# Launching picom compositor (transparency, round corners, ...)
+exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf
 
 # == Workspace assignments ==
 
@@ -275,8 +283,8 @@ exec_always --no-startup-id i3-autolayout autolayout &
 
 bar {
         # binding_mode_indicator no 
-        mode hide
-        modifier none
+        # mode hide
+        # modifier none
         status_command i3status
         # Set position of bar
         position top

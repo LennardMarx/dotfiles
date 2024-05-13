@@ -26,6 +26,7 @@ style = "Regular"
 
 [window]
 decorations = "none"
+# decorations = "full"
 dynamic_padding = false
 dynamic_title = true
 title = "Alacritty"
