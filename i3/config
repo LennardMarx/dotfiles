@@ -30,7 +30,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+# exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -239,12 +239,20 @@ hide_edge_borders both
 # == General Settings ==
 
 # Gaps between windows
-gaps inner 7
+gaps inner 10
 # gaps outer 1
 # Focus follows mouse
 focus_follows_mouse no
 
-hide_edge_borders both
+# hide_edge_borders both
+
+# border and title of windows
+default_border none
+
+# border and title of floating windows
+default_floating_border none
+
+
 
 # == Keybinds ==
 
@@ -279,7 +287,7 @@ bindsym $mod+s exec rofi -show filebrowser
 # US keyboard layout
 exec_always --no-startup-id setxkbmap us,de
 # Wallpaper
-exec_always feh --bg-fill ~/Pictures/wallpaper/blue_mountains_2.jpg
+exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper/blue_mountains_hq.jpg
 # Automatic tiling layout (AUR package with the same name)
 exec_always --no-startup-id i3-autolayout autolayout &
 # Launching picom compositor (transparency, round corners, ...)
@@ -305,6 +313,8 @@ bar {
 
         # top padding, right padding, bottom padding, 1px left padding
         padding 0px 0px 0px 1px
+
+        workspace_min_width 20
 
         # bar style
         colors{
