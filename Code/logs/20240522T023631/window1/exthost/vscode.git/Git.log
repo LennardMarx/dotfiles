@@ -1,0 +1,108 @@
+2024-05-22 02:36:35.106 [info] Log level: Info
+2024-05-22 02:36:35.106 [info] Validating found git in: "git"
+2024-05-22 02:36:35.106 [info] Using git "2.25.1" from "git"
+2024-05-22 02:36:54.784 [info] Log level: Info
+2024-05-22 02:36:54.784 [info] Validating found git in: "git"
+2024-05-22 02:36:54.784 [info] Using git "2.25.1" from "git"
+2024-05-22 02:36:54.784 [info] > git rev-parse --show-toplevel [8ms]
+2024-05-22 02:36:54.784 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-22 02:36:54.791 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-22 02:36:54.791 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-22 02:36:54.796 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-22 02:36:54.796 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-22 02:36:54.800 [info] > git rev-parse --show-toplevel [1ms]
+2024-05-22 02:36:54.800 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-22 02:37:05.579 [info] > git rev-parse --show-toplevel [4ms]
+2024-05-22 02:37:05.586 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2024-05-22 02:37:05.594 [info] Open repository: /home/lennard/Projects/catkin_ws/src/franka_ros
+2024-05-22 02:37:05.604 [info] > git config --get commit.template [5ms]
+2024-05-22 02:37:05.616 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [13ms]
+2024-05-22 02:37:05.619 [warning] ENOENT: no such file or directory, open '/home/lennard/Projects/catkin_ws/src/franka_ros/.git/refs/remotes/origin/develop'
+2024-05-22 02:37:05.621 [info] > git rev-parse refs/remotes/origin/develop [2ms]
+2024-05-22 02:37:05.787 [info] > git status -z -uall [161ms]
+2024-05-22 02:37:05.807 [info] > git merge-base refs/heads/develop refs/remotes/origin/develop [13ms]
+2024-05-22 02:37:05.856 [info] > git rev-list --count --left-right refs/heads/develop...refs/remotes/origin/develop [45ms]
+2024-05-22 02:37:05.861 [info] > git config --get commit.template [55ms]
+2024-05-22 02:37:05.879 [info] > git diff --name-status -z --diff-filter=ADMR c11f000c2737acc22ed8dfeff40555b2644a4294...refs/remotes/origin/develop [19ms]
+2024-05-22 02:37:05.886 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [2ms]
+2024-05-22 02:37:05.892 [warning] ENOENT: no such file or directory, open '/home/lennard/Projects/catkin_ws/src/franka_ros/.git/refs/remotes/origin/develop'
+2024-05-22 02:37:05.894 [info] > git rev-parse refs/remotes/origin/develop [2ms]
+2024-05-22 02:37:05.943 [info] > git status -z -uall [46ms]
+2024-05-22 02:37:06.105 [info] > git show --textconv :franka_example_controllers/launch/cartesian_impedance_simulation_only.launch [5ms]
+2024-05-22 02:37:06.107 [info] > git ls-files --stage -- /home/lennard/Projects/catkin_ws/src/franka_ros/franka_example_controllers/launch/cartesian_impedance_simulation_only.launch [3ms]
+2024-05-22 02:37:06.217 [info] > git check-ignore -v -z --stdin [3ms]
+2024-05-22 02:37:14.866 [info] > git ls-files --stage -- /home/lennard/Projects/catkin_ws/src/franka_ros/franka_example_controllers/launch/cartesian_impedance_example_controller.launch [2ms]
+2024-05-22 02:37:14.870 [info] > git show --textconv :franka_example_controllers/launch/cartesian_impedance_example_controller.launch [8ms]
+2024-05-22 02:37:14.871 [info] > git cat-file -s 5b0d49141c6a4ef07b84112935afe7d6d38a9b5a [2ms]
+2024-05-22 02:37:18.170 [info] > git show --textconv :franka_example_controllers/launch/cartesian_impedance_simulation_only.launch [5ms]
+2024-05-22 02:37:18.178 [info] > git show --textconv :franka_example_controllers/launch/cartesian_impedance_example_controller.launch [4ms]
+2024-05-22 02:37:18.178 [info] > git ls-files --stage -- /home/lennard/Projects/catkin_ws/src/franka_ros/franka_example_controllers/launch/cartesian_impedance_simulation_only.launch [9ms]
+2024-05-22 02:37:18.187 [info] > git ls-files --stage -- /home/lennard/Projects/catkin_ws/src/franka_ros/franka_example_controllers/launch/cartesian_impedance_example_controller.launch [10ms]
+2024-05-22 02:37:18.192 [info] > git cat-file -s 5b0d49141c6a4ef07b84112935afe7d6d38a9b5a [2ms]
+2024-05-22 02:41:58.391 [info] > git config --get commit.template [6ms]
+2024-05-22 02:41:58.391 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [2ms]
+2024-05-22 02:41:58.395 [warning] ENOENT: no such file or directory, open '/home/lennard/Projects/catkin_ws/src/franka_ros/.git/refs/remotes/origin/develop'
+2024-05-22 02:41:58.397 [info] > git rev-parse refs/remotes/origin/develop [2ms]
+2024-05-22 02:41:58.436 [info] > git status -z -uall [36ms]
+2024-05-22 02:43:59.668 [info] > git config --get commit.template [5ms]
+2024-05-22 02:43:59.671 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [4ms]
+2024-05-22 02:43:59.675 [warning] ENOENT: no such file or directory, open '/home/lennard/Projects/catkin_ws/src/franka_ros/.git/refs/remotes/origin/develop'
+2024-05-22 02:43:59.677 [info] > git rev-parse refs/remotes/origin/develop [3ms]
+2024-05-22 02:43:59.718 [info] > git status -z -uall [38ms]
+2024-05-22 02:45:48.740 [info] > git show --textconv :franka_example_controllers/launch/cartesian_impedance_simulation_only.launch [5ms]
+2024-05-22 02:45:48.741 [info] > git ls-files --stage -- /home/lennard/Projects/catkin_ws/src/franka_ros/franka_example_controllers/launch/cartesian_impedance_simulation_only.launch [2ms]
+2024-05-22 02:46:31.666 [info] > git config --get commit.template [4ms]
+2024-05-22 02:46:31.667 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [2ms]
+2024-05-22 02:46:31.670 [warning] ENOENT: no such file or directory, open '/home/lennard/Projects/catkin_ws/src/franka_ros/.git/refs/remotes/origin/develop'
+2024-05-22 02:46:31.672 [info] > git rev-parse refs/remotes/origin/develop [2ms]
+2024-05-22 02:46:31.707 [info] > git status -z -uall [33ms]
+2024-05-22 02:47:20.964 [info] > git config --get commit.template [4ms]
+2024-05-22 02:47:20.966 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [2ms]
+2024-05-22 02:47:20.969 [warning] ENOENT: no such file or directory, open '/home/lennard/Projects/catkin_ws/src/franka_ros/.git/refs/remotes/origin/develop'
+2024-05-22 02:47:20.971 [info] > git rev-parse refs/remotes/origin/develop [2ms]
+2024-05-22 02:47:21.003 [info] > git status -z -uall [30ms]
+2024-05-22 02:50:10.006 [info] > git config --get commit.template [4ms]
+2024-05-22 02:50:10.007 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [2ms]
+2024-05-22 02:50:10.010 [warning] ENOENT: no such file or directory, open '/home/lennard/Projects/catkin_ws/src/franka_ros/.git/refs/remotes/origin/develop'
+2024-05-22 02:50:10.011 [info] > git rev-parse refs/remotes/origin/develop [1ms]
+2024-05-22 02:50:10.046 [info] > git status -z -uall [32ms]
+2024-05-22 02:50:47.360 [info] > git config --get commit.template [3ms]
+2024-05-22 02:50:47.362 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [2ms]
+2024-05-22 02:50:47.364 [warning] ENOENT: no such file or directory, open '/home/lennard/Projects/catkin_ws/src/franka_ros/.git/refs/remotes/origin/develop'
+2024-05-22 02:50:47.365 [info] > git rev-parse refs/remotes/origin/develop [1ms]
+2024-05-22 02:50:47.401 [info] > git status -z -uall [34ms]
+2024-05-22 02:51:08.431 [info] > git config --get commit.template [4ms]
+2024-05-22 02:51:08.433 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [2ms]
+2024-05-22 02:51:08.438 [warning] ENOENT: no such file or directory, open '/home/lennard/Projects/catkin_ws/src/franka_ros/.git/refs/remotes/origin/develop'
+2024-05-22 02:51:08.441 [info] > git rev-parse refs/remotes/origin/develop [3ms]
+2024-05-22 02:51:08.482 [info] > git status -z -uall [37ms]
+2024-05-22 02:51:20.306 [info] > git config --get commit.template [3ms]
+2024-05-22 02:51:20.307 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [1ms]
+2024-05-22 02:51:20.310 [warning] ENOENT: no such file or directory, open '/home/lennard/Projects/catkin_ws/src/franka_ros/.git/refs/remotes/origin/develop'
+2024-05-22 02:51:20.312 [info] > git rev-parse refs/remotes/origin/develop [2ms]
+2024-05-22 02:51:20.344 [info] > git status -z -uall [30ms]
+2024-05-22 02:51:32.299 [info] > git config --get commit.template [4ms]
+2024-05-22 02:51:32.302 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [3ms]
+2024-05-22 02:51:32.304 [warning] ENOENT: no such file or directory, open '/home/lennard/Projects/catkin_ws/src/franka_ros/.git/refs/remotes/origin/develop'
+2024-05-22 02:51:32.306 [info] > git rev-parse refs/remotes/origin/develop [2ms]
+2024-05-22 02:51:32.338 [info] > git status -z -uall [30ms]
+2024-05-22 02:52:22.988 [info] > git config --get commit.template [5ms]
+2024-05-22 02:52:22.989 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [2ms]
+2024-05-22 02:52:22.991 [warning] ENOENT: no such file or directory, open '/home/lennard/Projects/catkin_ws/src/franka_ros/.git/refs/remotes/origin/develop'
+2024-05-22 02:52:22.992 [info] > git rev-parse refs/remotes/origin/develop [1ms]
+2024-05-22 02:52:23.025 [info] > git status -z -uall [31ms]
+2024-05-22 03:04:55.307 [info] > git config --get commit.template [5ms]
+2024-05-22 03:04:55.308 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [2ms]
+2024-05-22 03:04:55.310 [warning] ENOENT: no such file or directory, open '/home/lennard/Projects/catkin_ws/src/franka_ros/.git/refs/remotes/origin/develop'
+2024-05-22 03:04:55.312 [info] > git rev-parse refs/remotes/origin/develop [2ms]
+2024-05-22 03:04:55.351 [info] > git status -z -uall [37ms]
+2024-05-22 03:05:34.264 [info] > git config --get commit.template [7ms]
+2024-05-22 03:05:34.266 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [3ms]
+2024-05-22 03:05:34.270 [warning] ENOENT: no such file or directory, open '/home/lennard/Projects/catkin_ws/src/franka_ros/.git/refs/remotes/origin/develop'
+2024-05-22 03:05:34.271 [info] > git rev-parse refs/remotes/origin/develop [1ms]
+2024-05-22 03:05:34.308 [info] > git status -z -uall [33ms]
+2024-05-22 03:06:58.017 [info] > git config --get commit.template [6ms]
+2024-05-22 03:06:58.019 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [3ms]
+2024-05-22 03:06:58.026 [warning] ENOENT: no such file or directory, open '/home/lennard/Projects/catkin_ws/src/franka_ros/.git/refs/remotes/origin/develop'
+2024-05-22 03:06:58.028 [info] > git rev-parse refs/remotes/origin/develop [2ms]
+2024-05-22 03:06:58.069 [info] > git status -z -uall [36ms]

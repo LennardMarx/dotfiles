@@ -1,0 +1,41 @@
+2024-05-22 05:03:02.074 [info] Log level: Info
+2024-05-22 05:03:02.074 [info] Validating found git in: "git"
+2024-05-22 05:03:02.074 [info] Using git "2.25.1" from "git"
+2024-05-22 05:03:02.074 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-22 05:03:02.074 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-22 05:03:02.074 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-22 05:03:02.074 [info] > git rev-parse --git-dir --git-common-dir [1ms]
+2024-05-22 05:03:02.074 [info] Open repository: /home/lennard/Projects/catkin_ws/src/franka_ros
+2024-05-22 05:03:02.074 [info] > git config --get commit.template [18ms]
+2024-05-22 05:03:02.074 [info] > git rev-parse --show-toplevel [15ms]
+2024-05-22 05:03:02.074 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-22 05:03:02.074 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-22 05:03:02.074 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-22 05:03:02.082 [info] > git rev-parse --show-toplevel [2ms]
+2024-05-22 05:03:02.082 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-22 05:03:02.090 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [27ms]
+2024-05-22 05:03:02.096 [warning] ENOENT: no such file or directory, open '/home/lennard/Projects/catkin_ws/src/franka_ros/.git/refs/remotes/origin/develop'
+2024-05-22 05:03:02.097 [info] > git rev-parse refs/remotes/origin/develop [1ms]
+2024-05-22 05:03:02.373 [info] > git status -z -uall [270ms]
+2024-05-22 05:03:02.440 [info] > git merge-base refs/heads/develop refs/remotes/origin/develop [48ms]
+2024-05-22 05:03:02.480 [info] > git config --get commit.template [34ms]
+2024-05-22 05:03:02.491 [info] > git rev-list --count --left-right refs/heads/develop...refs/remotes/origin/develop [19ms]
+2024-05-22 05:03:02.519 [info] > git diff --name-status -z --diff-filter=ADMR c11f000c2737acc22ed8dfeff40555b2644a4294...refs/remotes/origin/develop [20ms]
+2024-05-22 05:03:02.593 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [76ms]
+2024-05-22 05:03:02.617 [warning] ENOENT: no such file or directory, open '/home/lennard/Projects/catkin_ws/src/franka_ros/.git/refs/remotes/origin/develop'
+2024-05-22 05:03:02.641 [info] > git rev-parse refs/remotes/origin/develop [24ms]
+2024-05-22 05:03:02.788 [info] > git status -z -uall [126ms]
+2024-05-22 05:03:02.788 [info] > git check-ignore -v -z --stdin [13ms]
+2024-05-22 05:03:02.806 [info] > git rev-parse --show-toplevel [18ms]
+2024-05-22 05:03:02.806 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-22 05:03:03.240 [info] > git rev-parse --show-toplevel [9ms]
+2024-05-22 05:03:03.240 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-22 05:03:04.060 [info] > git rev-parse --show-toplevel [4ms]
+2024-05-22 05:03:04.060 [info] fatal: not a git repository (or any of the parent directories): .git
+2024-05-22 05:03:04.258 [info] > git show --textconv :franka_example_controllers/launch/cartesian_impedance_simulation_only.launch [10ms]
+2024-05-22 05:03:04.263 [info] > git ls-files --stage -- /home/lennard/Projects/catkin_ws/src/franka_ros/franka_example_controllers/launch/cartesian_impedance_simulation_only.launch [8ms]
+2024-05-22 05:03:12.104 [info] > git config --get commit.template [4ms]
+2024-05-22 05:03:12.106 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/develop refs/remotes/develop [3ms]
+2024-05-22 05:03:12.108 [warning] ENOENT: no such file or directory, open '/home/lennard/Projects/catkin_ws/src/franka_ros/.git/refs/remotes/origin/develop'
+2024-05-22 05:03:12.110 [info] > git rev-parse refs/remotes/origin/develop [2ms]
+2024-05-22 05:03:12.149 [info] > git status -z -uall [37ms]

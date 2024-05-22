@@ -13,11 +13,12 @@ apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-
 cargo install alacritty
 ```
 
-## Pull into ~./config folder
+## Pull into ~./config folder (maybe somewhere there has to be a git add . in there)
 ```
 git init .
 git remote add origin https://github.com/LennardMarx/dotfiles.git
-git pull origin master
+git branch -M main
+git pull origin main
 ```
 
 #### i3
